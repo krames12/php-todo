@@ -1,9 +1,8 @@
 <?php
 
 $query = require "bootstrap.php";
-require "classes\Task.php";
 
-$tasks = $query->selectAll('todos');
+$tasks = $query->selectAll('todos', 'Task');
 
 require "index.view.php";
 
