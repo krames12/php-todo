@@ -7,7 +7,7 @@
 <body>
     
     <ul>
-        <?php foreach ($tasks as $task) : ?>
+        <!--<?php foreach ($tasks as $task) : ?>
             <li>
                 <?php if($task->isComplete()) : ?>
                     <strike><?=$task->getDescription();?></strike>
@@ -15,7 +15,7 @@
                     <?=$task->getDescription();?>
                 <?php endif; ?>
             </li>
-        <?php endforeach; ?>
+        <?php endforeach; ?>-->
     </ul>
     
 </body>
