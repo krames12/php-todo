@@ -7,15 +7,15 @@
 <body>
     
     <ul>
-        <!--<?php foreach ($tasks as $task) : ?>
+        <?php foreach ($tasks as $task) : ?>
             <li>
-                <?php if($task->isComplete()) : ?>
-                    <strike><?=$task->getDescription();?></strike>
+                <?php if($task->complete) : ?>
+                    <strike><?= $task->description; ?></strike>
                 <?php else : ?>
-                    <?=$task->getDescription();?>
+                    <?= $task->description; ?>
                 <?php endif; ?>
             </li>
-        <?php endforeach; ?>-->
+        <?php endforeach; ?>
     </ul>
     
 </body>
