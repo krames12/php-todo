@@ -1,10 +1,13 @@
 <?php
+
 return [
   'database' => [
-    'name' => 'kramer-todo',
+    'name' => 'KramerTodo',
     'username' => 'root',
     'password' => '',
-    'connection' => 'mysql:host=localhost',
-    'options' => []
+    'connection' => 'mysql:host=127.0.0.1',
+    'options' => [
+      PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION  
+    ]
   ]
 ];
