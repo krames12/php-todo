@@ -1,5 +1,6 @@
 <?php
 
+// remove 'php-todo' from each route when putting into production
 $router->define([
     'php-todo' => 'controllers/index.php',
     'php-todo/about' => 'controllers/about.php',
