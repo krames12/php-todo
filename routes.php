@@ -1,9 +1,10 @@
 <?php
 
 // remove 'php-todo' from each route when putting into production
-$router->define([
-    'php-todo' => 'controllers/index.php',
-    'php-todo/about' => 'controllers/about.php',
-    'php-todo/about/culture' => 'controllers/about-culture.php',
-    'php-todo/contact' => 'controllers/contact.php'
-]);
+
+$router->get('php-todo', 'controllers/index.php');
+$router->get('php-todo/about', 'controllers/about.php');
+$router->get('php-todo/about/culture', 'controllers/about-culture.php');
+$router->post('php-todo/names', 'controllers/add-name.php');
+
+// var_dump($router->routes);
