@@ -2,9 +2,6 @@
 
 // remove ' ' from each route when putting into production
 
-$router->get('', 'controllers/index.php');
-$router->get('about', 'controllers/about.php');
-$router->get('about/culture', 'controllers/about-culture.php');
-$router->post('names', 'controllers/add-name.php');
-
-// var_dump($router->routes);
+$router->get('', 'PagesController@home');
+$router->get('about', 'PagesController@about');
+$router->get('contact', 'PagesController@contact');
